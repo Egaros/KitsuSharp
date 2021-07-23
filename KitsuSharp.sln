@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitsuSharp", "KitsuSharp\KitsuSharp.csproj", "{F83E8A26-FAAB-44A9-B310-59C63F3F2E10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitsuSharp.Rest", "KitsuSharp.Rest\KitsuSharp.Rest.csproj", "{F83E8A26-FAAB-44A9-B310-59C63F3F2E10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
