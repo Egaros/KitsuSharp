@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace KitsuSharp.Enums
+namespace KitsuSharp.Rest.Enums
 {
     public enum GroupTicketStatus
     {

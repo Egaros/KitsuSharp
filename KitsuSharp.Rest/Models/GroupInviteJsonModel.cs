@@ -3,21 +3,17 @@ using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class GroupInviteJsonModel
+    public class GroupInviteJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "groupInvites";
 
         [JsonProperty("acceptedAt")]
-        public DateTimeOffset? AcceptedAt;
+        public DateTimeOffset? AcceptedAt { get; set; }
 
         [JsonProperty("declinedAt")]
-        public DateTimeOffset? DeclinedAt;
+        public DateTimeOffset? DeclinedAt { get; set; }
 
         [JsonProperty("revokedAt")]
-        public DateTimeOffset? RevokedAt;
+        public DateTimeOffset? RevokedAt { get; set; }
     }
 }

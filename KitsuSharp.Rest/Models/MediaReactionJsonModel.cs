@@ -1,20 +1,15 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
     public class MediaReactionJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "mediaReactions";
 
         [JsonProperty("reaction")]
-        public string Reaction;
+        public string Reaction { get; set; }
 
         [JsonProperty("upVotesCount")]
-        public int UpVotesCount;
+        public int UpVotesCount { get; set; }
     }
 }

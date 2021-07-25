@@ -3,21 +3,17 @@ using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class LeaderChatMessageJsonModel
+    public class LeaderChatMessageJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "leaderChatMessages";
 
         [JsonProperty("content")]
-        public string Content;
+        public string Content { get; set; }
 
         [JsonProperty("contentFormatted")]
-        public string ContentFormatted;
+        public string ContentFormatted { get; set; }
 
         [JsonProperty("editedAt")]
-        public DateTimeOffset? EditedAt;
+        public DateTimeOffset? EditedAt { get; set; }
     }
 }

@@ -1,17 +1,12 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class GroupActionLogJsonModel
+    public class GroupActionLogJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "groupActionLogs";
 
         [JsonProperty("verb")]
-        public string Verb;
+        public string Verb { get; set; }
     }
 }

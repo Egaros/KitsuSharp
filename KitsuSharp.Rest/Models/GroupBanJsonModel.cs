@@ -1,20 +1,15 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class GroupBanJsonModel
+    public class GroupBanJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "groupBans";
 
         [JsonProperty("notes")]
-        public string Notes;
+        public string Notes { get; set; }
 
         [JsonProperty("notesFormatted")]
-        public string NotesFormatted;
+        public string NotesFormatted { get; set; }
     }
 }

@@ -1,17 +1,12 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class AnimeStaffJsonModel
+    public class AnimeStaffJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "animeStaff";
 
         [JsonProperty("role")]
-        public string Role;
+        public string Role { get; set; }
     }
 }

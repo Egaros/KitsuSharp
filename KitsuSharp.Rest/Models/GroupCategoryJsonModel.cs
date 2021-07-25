@@ -1,23 +1,18 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class GroupCategoryJsonModel
+    public class GroupCategoryJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "groupCategories";
 
         [JsonProperty("name")]
-        public string Name;
+        public string Name { get; set; }
 
         [JsonProperty("slug")]
-        public string Slug;
+        public string Slug { get; set; }
 
         [JsonProperty("description")]
-        public string Description;
+        public string Description { get; set; }
     }
 }

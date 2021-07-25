@@ -1,21 +1,16 @@
-﻿using System;
-using KitsuSharp.Enums;
+﻿using KitsuSharp.Rest.Enums;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class GroupMemberJsonModel
+    public class GroupMemberJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "groupMembers";
 
         [JsonProperty("rank")]
-        public GroupMemberRank Rank;
+        public GroupMemberRank Rank { get; set; }
 
         [JsonProperty("unreadCount")]
-        public int UnreadCount;
+        public int UnreadCount { get; set; }
     }
 }

@@ -1,26 +1,21 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class SiteAnnouncementJsonModel
+    public class SiteAnnouncementJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "siteAnnouncements";
 
         [JsonProperty("title")]
-        public string Title;
+        public string Title { get; set; }
 
         [JsonProperty("description")]
-        public string Description;
+        public string Description { get; set; }
 
         [JsonProperty("imageUrl")]
-        public string ImageUrl;
+        public string ImageUrl { get; set; }
 
         [JsonProperty("link")]
-        public string Link;
+        public string Link { get; set; }
     }
 }

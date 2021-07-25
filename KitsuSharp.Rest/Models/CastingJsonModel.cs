@@ -1,26 +1,21 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class CastingJsonModel
+    public class CastingJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "animeStaff";
 
         [JsonProperty("role")]
-        public string Role;
+        public string Role { get; set; }
 
         [JsonProperty("voiceActor")]
-        public bool VoiceActor;
+        public bool VoiceActor { get; set; }
 
         [JsonProperty("featured")]
-        public bool Featured;
+        public bool Featured { get; set; }
 
         [JsonProperty("language")]
-        public string Language;
+        public string Language { get; set; }
     }
 }

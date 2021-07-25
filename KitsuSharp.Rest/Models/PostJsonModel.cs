@@ -5,46 +5,42 @@ namespace KitsuSharp.Rest.Models
 {
     public class PostJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "posts";
 
         [JsonProperty("content")]
-        public string Content;
+        public string Content { get; set; }
 
         [JsonProperty("commentsCount")]
-        public int CommentsCount;
+        public int CommentsCount { get; set; }
 
         [JsonProperty("postLikesCount")]
-        public int PostLikesCount;
+        public int PostLikesCount { get; set; }
 
         [JsonProperty("spoiler")]
-        public bool Spoiler;
+        public bool Spoiler { get; set; }
 
         [JsonProperty("nsfw")]
-        public bool Nsfw;
+        public bool Nsfw { get; set; }
 
         [JsonProperty("blocked")]
-        public bool Blocked;
+        public bool Blocked { get; set; }
 
         [JsonProperty("deletedAt")]
-        public DateTimeOffset? DeletedAt;
+        public DateTimeOffset? DeletedAt { get; set; }
 
         [JsonProperty("topLevelCommentsCount")]
-        public int TopLevelCommentsCount;
+        public int TopLevelCommentsCount { get; set; }
 
         [JsonProperty("editedAt")]
-        public DateTimeOffset? EditedAt;
+        public DateTimeOffset? EditedAt { get; set; }
 
         [JsonProperty("targetInterest")]
-        public string TargetInterest;
+        public string TargetInterest { get; set; }
 
         [JsonProperty("embed")]
-        public string Embed;
+        public string Embed { get; set; }
 
         [JsonProperty("embedUrl")]
-        public string EmbedUrl;
+        public string EmbedUrl { get; set; }
     }
 }

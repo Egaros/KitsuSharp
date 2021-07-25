@@ -1,17 +1,12 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class GroupTicketMessageJsonModel
+    public class GroupTicketMessageJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "groupTicketMessages";
 
         [JsonProperty("content")]
-        public string Content;
+        public string Content { get; set; }
     }
 }

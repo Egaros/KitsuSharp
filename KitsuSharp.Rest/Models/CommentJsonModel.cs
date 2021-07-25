@@ -1,41 +1,37 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace KitsuSharp.Models
+namespace KitsuSharp.Rest.Models
 {
-    public class CommentJsonModel
+    public class CommentJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "comments";
 
         [JsonProperty("content")]
-        public string Content;
+        public string Content { get; set; }
 
         [JsonProperty("contentFormatted")]
-        public string ContentFormatted;
+        public string ContentFormatted { get; set; }
 
         [JsonProperty("blocked")]
-        public bool Blocked;
+        public bool Blocked { get; set; }
 
         [JsonProperty("deletedAt")]
-        public DateTimeOffset? DeletedAt;
+        public DateTimeOffset? DeletedAt { get; set; }
 
         [JsonProperty("likesCount")]
-        public int LikesCount;
+        public int LikesCount { get; set; }
 
         [JsonProperty("repliesCount")]
-        public int RepliesCount;
+        public int RepliesCount { get; set; }
 
         [JsonProperty("editedAt")]
-        public DateTimeOffset? EditedAt;
+        public DateTimeOffset? EditedAt { get; set; }
 
         [JsonProperty("embed")]
-        public string Embed;
+        public string Embed { get; set; }
 
         [JsonProperty("embedUrl")]
-        public string EmbedUrl;
+        public string EmbedUrl { get; set; }
     }
 }

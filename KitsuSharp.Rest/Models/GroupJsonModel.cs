@@ -1,64 +1,59 @@
 ﻿using System;
-using KitsuSharp.Enums;
-using KitsuSharp.Models;
+using KitsuSharp.Rest.Enums;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class GroupJsonModel
+    public class GroupJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "groups";
 
         [JsonProperty("slug")]
-        public string Slug;
+        public string Slug { get; set; }
 
         [JsonProperty("about")]
-        public string About;
+        public string About { get; set; }
 
         [JsonProperty("locale")]
-        public string Locale;
+        public string Locale { get; set; }
 
         [JsonProperty("membersCount")]
-        public int MembersCount;
+        public int MembersCount { get; set; }
 
         [JsonProperty("name")]
-        public string Name;
+        public string Name { get; set; }
 
         [JsonProperty("nsfw")]
-        public bool Nsfw;
+        public bool Nsfw { get; set; }
 
         [JsonProperty("privacy")]
-        public GroupPrivacy Privacy;
+        public GroupPrivacy Privacy { get; set; }
 
         [JsonProperty("rules")]
-        public string Rules;
+        public string Rules { get; set; }
 
         [JsonProperty("rulesFormatted")]
-        public string RulesFormatted;
+        public string RulesFormatted { get; set; }
 
         [JsonProperty("leadersCount")]
-        public int LeadersCount;
+        public int LeadersCount { get; set; }
 
         [JsonProperty("neighborsCount")]
-        public int NeighborsCount;
+        public int NeighborsCount { get; set; }
 
         [JsonProperty("featured")]
-        public bool Featured;
+        public bool Featured { get; set; }
 
         [JsonProperty("tagline")]
-        public string Tagline;
+        public string Tagline { get; set; }
 
         [JsonProperty("lastActivityAt")]
-        public DateTimeOffset LastActivityAt;
+        public DateTimeOffset LastActivityAt { get; set; }
 
         [JsonProperty("avatar")]
-        public ImageJsonModel Avatar;
+        public ImageJsonModel Avatar { get; set; }
 
         [JsonProperty("coverImage")]
-        public ImageJsonModel CoverImage;
+        public ImageJsonModel CoverImage { get; set; }
     }
 }

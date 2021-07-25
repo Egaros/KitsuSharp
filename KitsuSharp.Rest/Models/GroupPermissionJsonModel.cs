@@ -1,18 +1,13 @@
-﻿using System;
-using KitsuSharp.Enums;
+﻿using KitsuSharp.Rest.Enums;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class GroupPermissionJsonModel
+    public class GroupPermissionJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "groupPermissions";
 
         [JsonProperty("permission")]
-        public GroupPermission Permission;
+        public GroupPermission Permission { get; set; }
     }
 }

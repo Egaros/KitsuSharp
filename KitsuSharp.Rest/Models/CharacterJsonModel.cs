@@ -1,30 +1,24 @@
-﻿using System;
-using KitsuSharp.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class CharacterJsonModel
+    public class CharacterJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "characters";
 
         [JsonProperty("slug")]
-        public string Slug;
+        public string Slug { get; set; }
 
         [JsonProperty("name")]
-        public string Name;
+        public string Name { get; set; }
 
         [JsonProperty("malId")]
-        public int MalId;
+        public int MalId { get; set; }
 
         [JsonProperty("description")]
-        public string Description;
+        public string Description { get; set; }
 
         [JsonProperty("image")]
-        public ImageJsonModel Image;
+        public ImageJsonModel Image { get; set; }
     }
 }

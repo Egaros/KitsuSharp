@@ -1,18 +1,13 @@
-﻿using System;
-using KitsuSharp.Enums;
+﻿using KitsuSharp.Rest.Enums;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class GroupTicketJsonModel
+    public class GroupTicketJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "groupTickets";
 
         [JsonProperty("status")]
-        public GroupTicketStatus Status;
+        public GroupTicketStatus Status { get; set; }
     }
 }

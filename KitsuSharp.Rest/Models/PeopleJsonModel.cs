@@ -1,23 +1,18 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
     public class PeopleJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "people";
 
         [JsonProperty("image")]
-        public string Image;
+        public string Image { get; set; }
 
         [JsonProperty("name")]
-        public string Name;
+        public string Name { get; set; }
 
         [JsonProperty("malId")]
-        public int MalId;
+        public int MalId { get; set; }
     }
 }

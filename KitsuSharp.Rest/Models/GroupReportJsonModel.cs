@@ -1,30 +1,25 @@
-﻿using System;
-using KitsuSharp.Enums;
+﻿using KitsuSharp.Rest.Enums;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class GroupReportJsonModel
+    public class GroupReportJsonModel : ResourceBaseJsonModel
     {
-        [JsonProperty("createdAt")]
-        public DateTimeOffset CreatedAt;
-
-        [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt;
+        public static readonly string Type = "groupReports";
 
         [JsonProperty("reason")]
-        public ReportReason Reason;
+        public ReportReason Reason { get; set; }
 
         [JsonProperty("status")]
-        public ReportStatus Status;
+        public ReportStatus Status { get; set; }
 
         [JsonProperty("explanation")]
-        public string Explanation;
+        public string Explanation { get; set; }
 
         [JsonProperty("naughtyType")]
-        public string NaughtyType;
+        public string NaughtyType { get; set; }
 
         [JsonProperty("naughtyId")]
-        public int NaughtyId;
+        public int NaughtyId { get; set; }
     }
 }
