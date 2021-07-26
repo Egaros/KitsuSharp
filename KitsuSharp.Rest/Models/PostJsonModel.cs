@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
-    public class PostJsonModel
+    public class PostJsonModel : ResourceBaseJsonModel
     {
         public static readonly string Type = "posts";
 

@@ -1,6 +1,6 @@
 ﻿namespace KitsuSharp.Rest.Models
 {
-    public class PostLikeJsonModel
+    public class PostLikeJsonModel : ResourceBaseJsonModel
     {
         public static readonly string Type = "postLikes";
     }
