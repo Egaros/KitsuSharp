@@ -7,13 +7,13 @@ namespace KitsuSharp.Rest.Models
     {
         public static readonly string Type = "streamingLinks";
 
-        [JsonProperty("url")]
-        public string Url { get; set; }
+        [JsonProperty("dubs")]
+        public List<string> Dubs { get; set; } = new List<string>();
 
         [JsonProperty("subs")]
         public List<string> Subs { get; set; } = new List<string>();
 
-        [JsonProperty("dubs")]
-        public List<string> Dubs { get; set; } = new List<string>();
+        [JsonProperty("url")]
+        public string Url { get; set; }
     }
 }
