@@ -1,6 +1,6 @@
 ﻿namespace KitsuSharp.Rest.Models
 {
-    public class PostFollowJsonModel
+    public class PostFollowJsonModel : ResourceBaseJsonModel
     {
         public static readonly string Type = "postFollows";
     }

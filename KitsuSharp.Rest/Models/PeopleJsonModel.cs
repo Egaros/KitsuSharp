@@ -2,7 +2,7 @@
 
 namespace KitsuSharp.Rest.Models
 {
-    public class PeopleJsonModel
+    public class PeopleJsonModel : ResourceBaseJsonModel
     {
         public static readonly string Type = "people";
 
