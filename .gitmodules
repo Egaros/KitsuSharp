@@ -1,0 +1,3 @@
+[submodule "JsonApiSerializer"]
+	path = JsonApiSerializer
+	url = git@github.com:AnotherZane/JsonApiSerializer.git

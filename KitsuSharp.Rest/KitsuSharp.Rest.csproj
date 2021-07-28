@@ -4,7 +4,9 @@
         <RootNamespace>KitsuSharp.Rest</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
-      <PackageReference Include="JsonApiSerializer" Version="1.7.4" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="../JsonApiSerializer/src/JsonApiSerializer/JsonApiSerializer.csproj" />
     </ItemGroup>
 </Project>
