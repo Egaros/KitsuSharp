@@ -1,7 +1,8 @@
-﻿namespace KitsuSharp.Rest.Models
+﻿using JsonApiSerializer;
+
+namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("postLikes")]
     public class PostLikeJsonModel : ResourceBaseJsonModel
-    {
-        public static readonly string Type = "postLikes";
-    }
+    { }
 }

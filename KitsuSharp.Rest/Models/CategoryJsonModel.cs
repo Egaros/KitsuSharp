@@ -1,11 +1,11 @@
+using JsonApiSerializer;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("categories")]
     public class CategoryJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "categories";
-
         [JsonProperty("childCount")]
         public int ChildCount { get; set; }
 

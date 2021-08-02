@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using JsonApiSerializer;
+using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("producers")]
     public class ProducerJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "producers";
-
         [JsonProperty("slug")]
         public string Slug { get; set; }
 

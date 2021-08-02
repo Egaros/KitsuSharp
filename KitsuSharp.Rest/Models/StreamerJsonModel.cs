@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using JsonApiSerializer;
+using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("streamers")]
     public class StreamerJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "streamers";
-
         [JsonProperty("siteName")]
         public string SiteName { get; set; }
 

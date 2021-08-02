@@ -1,12 +1,12 @@
-﻿using KitsuSharp.Rest.Enums;
+﻿using JsonApiSerializer;
+using KitsuSharp.Rest.Enums;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("reports")]
     public class ReportJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "reports";
-
         [JsonProperty("reason")]
         public ReportReason Reason { get; set; }
 

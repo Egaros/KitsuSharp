@@ -1,12 +1,12 @@
 ﻿using System;
+using JsonApiSerializer;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("leaderChatMessages")]
     public class LeaderChatMessageJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "leaderChatMessages";
-
         [JsonProperty("content")]
         public string Content { get; set; }
 

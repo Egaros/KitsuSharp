@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using JsonApiSerializer;
+using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("profileLinks")]
     public class ProfileLinkJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "profileLinks";
-
         [JsonProperty("url")]
         public string Url { get; set; }
     }

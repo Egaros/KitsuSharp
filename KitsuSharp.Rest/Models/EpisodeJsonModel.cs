@@ -1,13 +1,13 @@
 using System;
+using JsonApiSerializer;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("episodes")]
     public class EpisodeJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "episodes";
-
         [JsonProperty("airdate")]
         public DateTimeOffset? AirDate { get; set; }
 

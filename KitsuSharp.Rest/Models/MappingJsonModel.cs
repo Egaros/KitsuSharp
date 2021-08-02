@@ -1,12 +1,12 @@
-﻿using KitsuSharp.Rest.Enums;
+﻿using JsonApiSerializer;
+using KitsuSharp.Rest.Enums;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("mappings")]
     public class MappingJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "mappings";
-
         [JsonProperty("externalSite")]
         public ExternalSite ExternalSite { get; set; }
 

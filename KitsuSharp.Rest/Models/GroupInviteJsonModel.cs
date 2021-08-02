@@ -1,12 +1,12 @@
 ﻿using System;
+using JsonApiSerializer;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("groupInvites")]
     public class GroupInviteJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "groupInvites";
-
         [JsonProperty("acceptedAt")]
         public DateTimeOffset? AcceptedAt { get; set; }
 

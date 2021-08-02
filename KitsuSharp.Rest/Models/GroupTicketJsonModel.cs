@@ -1,12 +1,12 @@
-﻿using KitsuSharp.Rest.Enums;
+﻿using JsonApiSerializer;
+using KitsuSharp.Rest.Enums;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("groupTickets")]
     public class GroupTicketJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "groupTickets";
-
         [JsonProperty("status")]
         public GroupTicketStatus Status { get; set; }
     }

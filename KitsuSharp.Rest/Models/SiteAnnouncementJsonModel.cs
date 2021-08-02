@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using JsonApiSerializer;
+using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("siteAnnouncements")]
     public class SiteAnnouncementJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "siteAnnouncements";
-
         [JsonProperty("title")]
         public string Title { get; set; }
 

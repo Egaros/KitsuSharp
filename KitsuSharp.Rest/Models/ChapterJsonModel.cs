@@ -1,13 +1,13 @@
 using System;
+using JsonApiSerializer;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("chapters")]
     public class ChapterJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "chapters";
-
         [JsonProperty("canonicalTitle")]
         public string CanonicalTitle { get; set; }
 

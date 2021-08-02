@@ -1,4 +1,5 @@
 using System;
+using JsonApiSerializer;
 using JsonApiSerializer.JsonApi;
 using KitsuSharp.Rest.Enums;
 using Newtonsoft.Json;
@@ -6,10 +7,9 @@ using Newtonsoft.Json.Linq;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("anime")]
     public class AnimeJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "anime";
-
         [JsonProperty("abbreviatedTitles")]
         public string[] AbbreviatedTitles { get; set; }
 

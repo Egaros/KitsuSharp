@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
+using JsonApiSerializer;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("streamingLinks")]
     public class StreamingLinkJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "streamingLinks";
-
         [JsonProperty("dubs")]
         public List<string> Dubs { get; set; } = new List<string>();
 

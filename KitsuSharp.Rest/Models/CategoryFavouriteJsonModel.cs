@@ -1,7 +1,8 @@
+using JsonApiSerializer;
+
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("categoryFavorites")]
     public class CategoryFavouriteJsonModel : ResourceBaseJsonModel
-    {
-        public static readonly string Type = "categoryFavorites";
-    }
+    { }
 }

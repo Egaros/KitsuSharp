@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using JsonApiSerializer;
+using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("people")]
     public class PeopleJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "people";
-
         [JsonProperty("image")]
         public string Image { get; set; }
 

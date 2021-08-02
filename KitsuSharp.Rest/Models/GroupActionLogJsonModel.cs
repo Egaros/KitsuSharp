@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using JsonApiSerializer;
+using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("groupActionLogs")]
     public class GroupActionLogJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "groupActionLogs";
-
         [JsonProperty("verb")]
         public string Verb { get; set; }
     }

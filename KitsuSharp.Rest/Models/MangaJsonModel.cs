@@ -1,14 +1,14 @@
 using System;
+using JsonApiSerializer;
 using KitsuSharp.Rest.Enums;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("manga")]
     public class MangaJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "manga";
-
         [JsonProperty("abbreviatedTitles")]
         public string[] AbbreviatedTitles;
 

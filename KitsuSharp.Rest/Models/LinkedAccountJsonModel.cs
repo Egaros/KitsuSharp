@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using JsonApiSerializer;
+using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("linkedAccounts")]
     public class LinkedAccountJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "linkedAccounts";
-
         [JsonProperty("disabledReason")]
         public string DisabledReason { get; set; }
 

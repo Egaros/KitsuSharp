@@ -1,7 +1,8 @@
-﻿namespace KitsuSharp.Rest.Models
+﻿using JsonApiSerializer;
+
+namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("follows")]
     public class UserFollowJsonModel : ResourceBaseJsonModel
-    {
-        public static readonly string Type = "follows";
-    }
+    { }
 }

@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using JsonApiSerializer;
+using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("characters")]
     public class CharacterJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "characters";
-
         [JsonProperty("slug")]
         public string Slug { get; set; }
 

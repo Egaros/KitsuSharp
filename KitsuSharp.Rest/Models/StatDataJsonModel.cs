@@ -1,8 +1,15 @@
-﻿namespace KitsuSharp.Rest.Models
+﻿using Newtonsoft.Json;
+
+namespace KitsuSharp.Rest.Models
 {
-    // TODO Map this
     public class StatDataJsonModel
     {
+        [JsonProperty("total")]
+        public int Total { get; set; }
 
+        [JsonProperty("total_media")]
+        public int TotalMedia { get; set; }
+
+        //todo
     }
 }

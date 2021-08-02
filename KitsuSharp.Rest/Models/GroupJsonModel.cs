@@ -1,13 +1,13 @@
 ﻿using System;
+using JsonApiSerializer;
 using KitsuSharp.Rest.Enums;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("groups")]
     public class GroupJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "groups";
-
         [JsonProperty("slug")]
         public string Slug { get; set; }
 

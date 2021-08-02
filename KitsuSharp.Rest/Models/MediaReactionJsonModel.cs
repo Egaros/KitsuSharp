@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using JsonApiSerializer;
+using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("mediaReactions")]
     public class MediaReactionJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "mediaReactions";
-
         [JsonProperty("reaction")]
         public string Reaction { get; set; }
 

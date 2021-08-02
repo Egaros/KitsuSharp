@@ -1,7 +1,8 @@
-﻿namespace KitsuSharp.Rest.Models
+﻿using JsonApiSerializer;
+
+namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("mediaReactionVotes")]
     public class MediaReactionVoteJsonModel : ResourceBaseJsonModel
-    {
-        public static readonly string Type = "mediaReactionVotes";
-    }
+    { }
 }

@@ -1,7 +1,8 @@
-﻿namespace KitsuSharp.Rest.Models
+﻿using JsonApiSerializer;
+
+namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("blocks")]
     public class UserBlockJsonModel : ResourceBaseJsonModel
-    {
-        public static readonly string Type = "blocks";
-    }
+    { }
 }

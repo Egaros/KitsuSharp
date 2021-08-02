@@ -1,12 +1,12 @@
 ﻿using System;
+using JsonApiSerializer;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("posts")]
     public class PostJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "posts";
-
         [JsonProperty("content")]
         public string Content { get; set; }
 

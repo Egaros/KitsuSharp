@@ -1,12 +1,12 @@
-﻿using KitsuSharp.Rest.Enums;
+﻿using JsonApiSerializer;
+using KitsuSharp.Rest.Enums;
 using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
+    [ResourceType("groupMembers")]
     public class GroupMemberJsonModel : ResourceBaseJsonModel
     {
-        public static readonly string Type = "groupMembers";
-
         [JsonProperty("rank")]
         public GroupMemberRank Rank { get; set; }
 
