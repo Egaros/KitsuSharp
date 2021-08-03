@@ -4,8 +4,8 @@ namespace KitsuSharp.Rest.Entities
 {
     public interface IKitsuEntity
     {
-        public DateTimeOffset CreatedAt { get; set; }
+        DateTimeOffset CreatedAt { get; set; }
 
-        public DateTimeOffset UpdatedAt { get; set; }
+        DateTimeOffset UpdatedAt { get; set; }
     }
 }
