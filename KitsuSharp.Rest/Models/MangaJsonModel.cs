@@ -10,72 +10,72 @@ namespace KitsuSharp.Rest.Models
     public class MangaJsonModel : ResourceBaseJsonModel
     {
         [JsonProperty("abbreviatedTitles")]
-        public string[] AbbreviatedTitles;
+        public string[] AbbreviatedTitles { get; set; }
 
         [JsonProperty("ageRating")]
-        public AgeRating AgeRating;
+        public AgeRating AgeRating { get; set; }
 
         [JsonProperty("ageRatingGuide")]
-        public string AgeRatingGuide;
+        public string AgeRatingGuide { get; set; }
 
         [JsonProperty("averageRating")]
-        public string AverageRating;
+        public string AverageRating { get; set; }
 
         [JsonProperty("canonicalTitle")]
-        public string CanonicalTitle;
+        public string CanonicalTitle { get; set; }
 
         [JsonProperty("chapterCount")]
-        public int ChapterCount;
+        public int ChapterCount { get; set; }
 
         [JsonProperty("coverImage")]
         public ImageJsonModel CoverImage;
 
         [JsonProperty("description")]
-        public string Description;
+        public string Description { get; set; }
 
         [JsonProperty("endDate")]
-        public DateTimeOffset EndDate;
+        public DateTimeOffset? EndDate;
 
         [JsonProperty("favoritesCount")]
-        public int FavouritesCount;
+        public int FavouritesCount { get; set; }
 
         [JsonProperty("nextRelease")]
-        public string NextRelease;
+        public string NextRelease { get; set; }
 
         [JsonProperty("popularityRank")]
-        public int PopularityRank;
+        public int PopularityRank { get; set; }
 
         [JsonProperty("posterImage")]
-        public ImageJsonModel PosterImage;
+        public ImageJsonModel PosterImage { get; set; }
 
         [JsonProperty("ratingFrequencies")]
-        public RatingFrequenciesJsonModel RatingFrequencies;
+        public RatingFrequenciesJsonModel RatingFrequencies { get; set; }
 
         [JsonProperty("serialization")]
-        public string Serialization;
+        public string Serialization { get; set; }
 
         [JsonProperty("slug")]
-        public string Slug;
+        public string Slug { get; set; }
 
         [JsonProperty("startDate")]
-        public DateTimeOffset StartDate;
+        public DateTimeOffset StartDate { get; set; }
 
         [JsonProperty("status")]
-        public MediaStatus Status;
+        public MediaStatus Status { get; set; }
 
         [JsonProperty("subtype")]
-        public MangaSubType SubType;
+        public MangaSubType SubType { get; set; }
 
         [JsonProperty("tba")]
-        public string Tba;
+        public string Tba { get; set; }
 
         [JsonProperty("titles")]
-        public JObject Titles;
+        public TitleJsonModel Titles { get; set; }
 
         [JsonProperty("userCount")]
-        public int UserCount;
+        public int UserCount { get; set; }
 
         [JsonProperty("volumeCount")]
-        public int VolumeCount;
+        public int VolumeCount { get; set; }
     }
 }
