@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace KitsuSharp.Rest
+namespace KitsuSharp.Rest.Enums
 {
     public enum AnimeSubType
     {

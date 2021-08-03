@@ -33,6 +33,6 @@ namespace KitsuSharp.Rest.Models
         public ImageJsonModel Thumbnail { get; set; }
 
         [JsonProperty("titles")]
-        public JObject Titles { get; set; }
+        public TitleJsonModel Titles { get; set; }
     }
 }

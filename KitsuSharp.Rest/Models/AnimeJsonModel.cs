@@ -77,7 +77,7 @@ namespace KitsuSharp.Rest.Models
         public string Tba { get; set; }
 
         [JsonProperty("titles")]
-        public JObject Titles { get; set; }
+        public TitleJsonModel Titles { get; set; }
 
         [JsonProperty("totalLength")]
         public int? TotalLength { get; set; }
