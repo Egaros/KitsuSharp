@@ -26,7 +26,10 @@ namespace KitsuSharp.Rest.Models
         public int VolumesOwned { get; set; }
 
         [JsonProperty("actionPerformed")]
-        public
+        public LibraryEntryActionPerformed ActionPerformed { get; set; }
+
+        [JsonProperty("syncStatus")]
+        public LibraryEntrySyncStatus SyncStatus { get; set; }
 
         [JsonProperty("errorMessage")]
         public string ErrorMessage { get; set; }
