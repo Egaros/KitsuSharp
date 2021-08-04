@@ -2,7 +2,7 @@
 
 namespace KitsuSharp.Rest.Entities
 {
-    public interface IEpisode : IKitsuEntity
+    public interface IEpisode : IKitsuEntity, ITitleEntity
     {
         DateTimeOffset? AirDate { get; }
 
@@ -17,7 +17,5 @@ namespace KitsuSharp.Rest.Entities
         int? SeasonNumber { get; }
 
         IImageEntity Thumbnail { get; }
-
-        ITitle Titles { get; }
     }
 }

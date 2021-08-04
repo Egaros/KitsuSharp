@@ -4,7 +4,7 @@ using KitsuSharp.Rest.Enums;
 
 namespace KitsuSharp.Rest.Entities
 {
-    public interface IManga : IKitsuEntity
+    public interface IManga : IKitsuEntity, ITitleEntity
     {
         IReadOnlyList<string> AbbreviatedTitles { get; }
 
@@ -45,8 +45,6 @@ namespace KitsuSharp.Rest.Entities
         MangaSubType SubType { get; }
 
         string Tba { get; }
-
-        ITitle Titles { get; }
 
         int UserCount { get; }
 

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace KitsuSharp.Rest.Models
 {
@@ -18,7 +17,7 @@ namespace KitsuSharp.Rest.Models
         public int ResourceOwnerId { get; set; }
 
         [JsonProperty("scopes")]
-        public List<string> Scopes { get; set; } = new List<string>();
+        public string[] Scopes { get; set; }
     }
 
     public class ApplicationJsonModel

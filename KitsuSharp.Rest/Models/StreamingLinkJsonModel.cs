@@ -8,10 +8,10 @@ namespace KitsuSharp.Rest.Models
     public class StreamingLinkJsonModel : ResourceBaseJsonModel
     {
         [JsonProperty("dubs")]
-        public List<string> Dubs { get; set; } = new List<string>();
+        public string[] Dubs { get; set; }
 
         [JsonProperty("subs")]
-        public List<string> Subs { get; set; } = new List<string>();
+        public string[] Subs { get; set; }
 
         [JsonProperty("url")]
         public string Url { get; set; }

@@ -1,6 +1,11 @@
 ﻿namespace KitsuSharp.Rest.Entities
 {
-    public interface ITitle
+    public interface ITitleEntity
+    {
+        ITitles Titles { get; }
+    }
+
+    public interface ITitles
     {
         string English { get; }
 

@@ -2,7 +2,7 @@
 
 namespace KitsuSharp.Rest.Entities
 {
-    public interface IChapter : IKitsuEntity
+    public interface IChapter : IKitsuEntity, ITitleEntity
     {
         string CanonicalTitle { get; }
 
@@ -15,8 +15,6 @@ namespace KitsuSharp.Rest.Entities
         DateTimeOffset PublishedAt { get; }
 
         IImageEntity Thumbnail { get; }
-
-        ITitle Titles { get; }
 
         int VolumeNumber { get; }
     }
